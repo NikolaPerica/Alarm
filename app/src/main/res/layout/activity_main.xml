@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1C4E9"
+    android:orientation="vertical"
+    android:backgroundTint="@color/colorPrimaryDark">
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmTime"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:numbersInnerTextColor="#ffffff"
+        android:headerBackground="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable"
+
+        android:id="@+id/alarmStart"
+        android:layout_gravity="left"
+        android:onClick="onClickEnable"
+        android:visibility="visible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disable"
+        android:enabled="true"
+        android:id="@+id/alarmDisable"
+        android:layout_gravity="right"
+        android:onClick="onClickDisable"
+        android:visibility="invisible"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/alarmStop"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>
